@@ -21,7 +21,7 @@ if (args.includes("-v") || args.includes("--version")) {
   try {
     const pkgPath = path.join(__dirname, "..", "..", "package.json");
     const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
-    console.log(`fdel v${pkg.version}`);
+    console.log(`fdlt v${pkg.version}`);
   } catch (err) {
   }
   process.exit(0);
